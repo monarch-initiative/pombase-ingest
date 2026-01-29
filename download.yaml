@@ -1,7 +1,9 @@
-# Download configuration for pombase-ingest
-
-downloads:
-  - url: "https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv"
-    local_name: "data/gene_IDs_names_products.tsv"
-  - url: "https://www.pombase.org/data/annotations/Phenotype_annotations/phenotype_annotations.pombase.phaf.gz"
-    local_name: "data/phenotype_annotations.pombase.phaf.gz"
+### This file is a YAML configuration that specifies
+### the data to be downloaded and ingested for this project.
+### The configuration is used by `kghub-downloader`.
+### For more information, see https://github.com/monarch-initiative/kghub-downloader
+---
+- url: "https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv"
+  local_name: "data/gene_IDs_names_products.tsv"
+- url: "https://www.pombase.org/data/annotations/Phenotype_annotations/phenotype_annotations.pombase.phaf.gz"
+  local_name: "data/phenotype_annotations.pombase.phaf.gz"

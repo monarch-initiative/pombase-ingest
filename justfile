@@ -23,7 +23,7 @@ install:
 # Download source data
 [group('ingest')]
 download:
-    uv run python scripts/download.py
+    uv run python -m kghub_downloader.main download.yaml
 
 # Run all transforms
 [group('ingest')]
