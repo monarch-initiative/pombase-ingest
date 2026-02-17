@@ -1,4 +1,4 @@
-# pombase-ingest
+# PomBase
 
 PomBase is a comprehensive database for the fission yeast _Schizosaccharomyces pombe_, providing structural and functional annotation, literature curation and access to large-scale data sets. This ingest transforms gene to phenotypic feature associations; gene entities aren't yet loaded as a part of this ingest, and FYPO ontology terms are brought in directly from the ontology without transformation.
 
@@ -42,40 +42,6 @@ Penetrance and Severity columns are available but not captured as a part of this
     - qualifiers (optionally included from condition row)
     - aggregating_knowledge_source (`["infores:monarchinitiative"]`)
     - primary_knowledge_source (`infores:pombase`)
-
-## Setup
-
-```bash
-just setup
-```
-
-## Usage
-
-### Download source data
-
-```bash
-just download
-```
-
-### Run transforms
-
-```bash
-# Run all transforms
-just transform-all
-
-# Run specific transform
-just transform <transform_name>
-```
-
-### Run tests
-
-```bash
-just test
-```
-
-## Adding New Ingests
-
-Use the `create-koza-ingest` Claude skill to add new ingests to this repository.
 
 ## Citation
 
